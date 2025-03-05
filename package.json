@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "vite",
     "start:example": "vite --config example/vite.config.ts",
-    "build": "vite build && tsc",
+    "build": "vite build && tsc -p tsconfig.build.json",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
