@@ -1,6 +1,6 @@
 {
   "name": "react-component-library-bobi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple React component library with TypeScript and Vite",
   "type": "module",
   "main": "./dist/index.cjs",
