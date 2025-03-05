@@ -1,0 +1,61 @@
+{
+  "name": "react-component-library-bobi",
+  "version": "0.1.0",
+  "description": "A simple React component library with TypeScript and Vite",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "start:example": "vite --config example/vite.config.ts",
+    "build": "vite build && tsc",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.8.2",
+    "vite": "^5.4.14"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "typescript",
+    "vite"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobi-dev-hub/react-component-library-bobi.git"
+  },
+  "license": "MIT",
+  "directories": {
+    "example": "example"
+  }
+}
