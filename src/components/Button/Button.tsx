@@ -1,5 +1,5 @@
-import React from 'react';
-import './Button.css';
+import * as React from "react";
+import "./Button.css";
 
 export interface ButtonProps {
   /**
@@ -13,7 +13,7 @@ export interface ButtonProps {
   /**
    * Optional button type
    */
-  type?: 'button' | 'submit' | 'reset';
+  type?: "button" | "submit" | "reset";
   /**
    * Optional disabled state
    */
@@ -22,18 +22,23 @@ export interface ButtonProps {
    * Optional className for styling
    */
   className?: string;
+  /**
+   * Optional children elements
+   */
+  children?: React.ReactNode;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   label,
   onClick,
-  type = 'button',
+  type = "button",
   disabled = false,
-  className = '',
-}) => {
+  className = "",
+  children,
+}: ButtonProps) => {
   return (
     <button
       type={type}
@@ -42,8 +47,9 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
     >
       {label}
+      {children}
     </button>
   );
 };
 
-export default Button; 
+export default Button;
