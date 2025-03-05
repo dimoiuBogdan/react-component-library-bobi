@@ -52,7 +52,7 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bobi-dev-hub/react-component-library-bobi.git"
+    "url": "git+https://github.com/bobi-dev-hub/react-component-library-bobi.git"
   },
   "license": "MIT",
   "directories": {
