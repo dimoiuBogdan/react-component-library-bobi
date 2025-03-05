@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
 import { readFileSync } from "fs";
+import { resolve } from "path";
+import { defineConfig } from "vite";
 
 // Read package.json to get peer dependencies
 const pkg = JSON.parse(readFileSync("./package.json", "utf-8"));
@@ -32,6 +32,10 @@ export default defineConfig({
         },
         // Ensure proper exports
         exports: "named",
+        // Preserve module structure
+        preserveModules: true,
+        // Place preserved modules within a 'lib' directory
+        preserveModulesRoot: "src",
       },
     },
     sourcemap: true,
