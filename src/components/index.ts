@@ -1,3 +1,4 @@
 // Export individual components
-export * from './Button';
-export * from './Input'; 
+export * from "./Badge";
+export * from "./Button";
+export * from "./Input";
