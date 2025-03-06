@@ -1,6 +1,6 @@
 {
   "name": "react-component-library-bobi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple React component library with TypeScript and Vite",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -34,14 +34,6 @@
     "primereact": "^10.9.2",
     "primeicons": "^7.0.0"
   },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": false
-    },
-    "react-dom": {
-      "optional": false
-    }
-  },
   "devDependencies": {
     "@types/node": "^22.13.9",
     "@types/react": "^19.0.10",
@@ -59,6 +51,8 @@
     "rimraf": "^6.0.1",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.0",
+    "primereact": "^10.9.2",
+    "primeicons": "^7.0.0",
     "vite": "^6.2.0"
   },
   "keywords": [
